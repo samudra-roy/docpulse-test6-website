@@ -811,10 +811,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 </body>
-  <div style="position:fixed;bottom:20px;right:20px;width:370px;height:540px;z-index:9999;">
-  <iframe src="https://docpulse-test6.vercel.app" 
-    style="width:100%;height:100%;border:none;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,0.15);"
-    title="Chat with us">
+ <div id="chat-widget-container" style="all:initial;position:fixed!important;bottom:20px!important;right:20px!important;width:370px!important;height:540px!important;z-index:2147483647!important;display:block!important;">
+  <iframe 
+    src="https://docpulse-test6.vercel.app"
+    style="all:initial;width:370px!important;height:540px!important;border:none!important;border-radius:16px!important;box-shadow:0 8px 32px rgba(0,0,0,0.15)!important;display:block!important;"
+    title="Chat with us"
+    frameborder="0">
   </iframe>
 </div>
 </html>
