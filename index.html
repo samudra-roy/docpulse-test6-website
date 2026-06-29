@@ -823,51 +823,25 @@ document.addEventListener('DOMContentLoaded', () => {
   title="Chat">
 </iframe>
 
-<button id="chat-close-mobile" onclick="document.getElementById('docpulse-chat').style.display='none';this.style.display='none';">✕</button>
-
 <style>
 #docpulse-chat {
   position: fixed;
   bottom: 0;
   right: 20px;
   width: 400px;
-  height: 640px;
+  height: 650px;
   border: none;
   z-index: 99999;
 }
 
-#chat-close-mobile {
-  display: none;
-}
-
 @media (max-width: 768px) {
   #docpulse-chat {
-    position: fixed;
-    top: 0;
+    bottom: 0;
+    right: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    border: none;
-    z-index: 99999;
-    border-radius: 0;
-  }
-
-  #chat-close-mobile {
-    display: flex;
-    position: fixed;
-    top: 12px;
-    right: 12px;
-    z-index: 100000;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: rgba(0,0,0,0.5);
-    color: white;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
   }
 }
 </style>
